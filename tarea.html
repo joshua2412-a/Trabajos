@@ -158,7 +158,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Trabajo 1 -  Módulo 1: Introducción a la ciencia de datos con python - Ejercicios 1, 2 y 3</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Trabajo 1 -  Módulo 1: Introducción a la ciencia de datos con python - Ejercicios 1, 2 y 3</strong></a></li>
 </ul>
 
     </div>
@@ -352,9 +352,26 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1"><strong>Ejercicio 1</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-el-factorial">1. Calcular el factorial</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriz-comparativa-de-vectores-aleatorios">2. Matriz comparativa de vectores aleatorios</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2"><strong>Ejercicio 2</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-matriz-de-ceros">1. Crear matriz de ceros</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#llenar-matriz-con-numeros-aleatorios-usando-while">2. Llenar matriz con números aleatorios (usando <code class="docutils literal notranslate"><span class="pre">while</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformar-elementos-usando-while">3. Transformar elementos (usando <code class="docutils literal notranslate"><span class="pre">while</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repetir-transformacion-usando-for">4. Repetir transformación (usando <code class="docutils literal notranslate"><span class="pre">for</span></code>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3"><strong>Ejercicio 3</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-un-data-frame-y-llamarlo-df">1. Crear un data frame y llamarlo <strong>df</strong>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#realizar-un-analisis-descriptivo-basico-de-todas-las-variables">2. Realizar un análisis descriptivo básico de todas las variables.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extraer-un-subconjunto-de-datos-con-los-primeros-4-estudiantes-y-llamarlo-subc1">3. Extraer un subconjunto de datos con los primeros 4 estudiantes y llamarlo <strong>subc1</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extraer-las-variables-categoricas-y-guardarlas-en-un-subconjunto-llamado-subc2">4. Extraer las variables categóricas y guardarlas en un subconjunto llamado <strong>subc2</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extraer-las-variables-numericas-y-guardarlas-en-un-subconjunto-llamado-subc3">5. Extraer las variables numéricas y guardarlas en un subconjunto llamado <strong>subc3</strong></a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -367,10 +384,9 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="trabajo-1-modulo-1-introduccion-a-la-ciencia-de-datos-con-python-ejercicios-1-2-y-3">
-<h1>Trabajo 1 -  Módulo 1: Introducción a la ciencia de datos con python - Ejercicios 1, 2 y 3<a class="headerlink" href="#trabajo-1-modulo-1-introduccion-a-la-ciencia-de-datos-con-python-ejercicios-1-2-y-3" title="Permalink to this heading">#</a></h1>
+<h1><strong>Trabajo 1 -  Módulo 1: Introducción a la ciencia de datos con python - Ejercicios 1, 2 y 3</strong><a class="headerlink" href="#trabajo-1-modulo-1-introduccion-a-la-ciencia-de-datos-con-python-ejercicios-1-2-y-3" title="Permalink to this heading">#</a></h1>
 <section id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this heading">#</a></h2>
-<p><strong>Ejercicio 1</strong></p>
+<h2><strong>Ejercicio 1</strong><a class="headerlink" href="#ejercicio-1" title="Permalink to this heading">#</a></h2>
 <p>Dado un valor <span class="math notranslate nohighlight">\(n\)</span>, realice las siguientes tareas:</p>
 <ol class="arabic simple">
 <li><p><strong>Calcular el factorial</strong>: Obtenga el resultado de multiplicar los números del 1 al <span class="math notranslate nohighlight">\(n\)</span> (factorial de <span class="math notranslate nohighlight">\(n\)</span>). Implemente una función que realice este cálculo.</p></li>
@@ -394,6 +410,8 @@ document.write(`
 <li><p>Use <code class="docutils literal notranslate"><span class="pre">np.concatenate()</span></code> para combinar los vectores en una matriz</p></li>
 <li><p>Pruebe con <span class="math notranslate nohighlight">\(n = 10\)</span> como ejemplo</p></li>
 </ul>
+<section id="calcular-el-factorial">
+<h3>1. Calcular el factorial<a class="headerlink" href="#calcular-el-factorial" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -415,6 +433,9 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
+<section id="matriz-comparativa-de-vectores-aleatorios">
+<h3>2. Matriz comparativa de vectores aleatorios<a class="headerlink" href="#matriz-comparativa-de-vectores-aleatorios" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -440,28 +461,28 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Vector 1: [10  5  8  2  3  9  7  8  6  2]
-Vector 2: [ 2  1  6  3  6  7  8  1 10  3]
-Vector 3: [1 1 1 0 0 1 0 1 0 0]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Vector 1: [6 7 3 3 1 9 8 7 1 6]
+Vector 2: [3 2 3 7 7 3 2 9 2 3]
+Vector 3: [1 1 1 0 0 1 1 0 0 1]
 Matriz concatenada: 
- [[10  2  1]
- [ 5  1  1]
- [ 8  6  1]
- [ 2  3  0]
- [ 3  6  0]
- [ 9  7  1]
- [ 7  8  0]
- [ 8  1  1]
- [ 6 10  0]
- [ 2  3  0]]
+ [[6 3 1]
+ [7 2 1]
+ [3 3 1]
+ [3 7 0]
+ [1 7 0]
+ [9 3 1]
+ [8 2 1]
+ [7 9 0]
+ [1 2 0]
+ [6 3 1]]
 </pre></div>
 </div>
 </div>
 </div>
 </section>
+</section>
 <section id="ejercicio-2">
-<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this heading">#</a></h2>
-<p><strong>Ejercicio 2</strong></p>
+<h2><strong>Ejercicio 2</strong><a class="headerlink" href="#ejercicio-2" title="Permalink to this heading">#</a></h2>
 <p>Dado valores <span class="math notranslate nohighlight">\(m\)</span> (número de filas) y <span class="math notranslate nohighlight">\(n\)</span> (número de columnas), realice las siguientes tareas:</p>
 <ol class="arabic simple">
 <li><p><strong>Crear matriz de ceros</strong>: Genere una matriz <span class="math notranslate nohighlight">\(A\)</span> de dimensiones <span class="math notranslate nohighlight">\((m \times n)\)</span> inicializada con ceros.</p></li>
@@ -493,6 +514,8 @@ Matriz concatenada:
 <li><p>Compare las dos matrices finales con <code class="docutils literal notranslate"><span class="pre">np.array_equal()</span></code></p></li>
 <li><p>Pruebe con <span class="math notranslate nohighlight">\(m = 4\)</span> y <span class="math notranslate nohighlight">\(n = 3\)</span> como ejemplo</p></li>
 </ul>
+<section id="crear-matriz-de-ceros">
+<h3>1. Crear matriz de ceros<a class="headerlink" href="#crear-matriz-de-ceros" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="mi">4</span>
@@ -501,8 +524,25 @@ Matriz concatenada:
 <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriz A inicializada: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
-
-<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matriz A inicializada: 
+ [[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="llenar-matriz-con-numeros-aleatorios-usando-while">
+<h3>2. Llenar matriz con números aleatorios (usando <code class="docutils literal notranslate"><span class="pre">while</span></code>)<a class="headerlink" href="#llenar-matriz-con-numeros-aleatorios-usando-while" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
     <span class="n">vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">m</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Vector generado para la columna </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">vector</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -510,8 +550,28 @@ Matriz concatenada:
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriz A: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
-
-<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Vector generado para la columna 1: [1 3 1 3]
+Vector generado para la columna 2: [1 0 2 3]
+Vector generado para la columna 3: [-1  1  3  1]
+Matriz A: 
+ [[ 1  1 -1]
+ [ 3  0  1]
+ [ 1  2  3]
+ [ 3  3  1]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="transformar-elementos-usando-while">
+<h3>3. Transformar elementos (usando <code class="docutils literal notranslate"><span class="pre">while</span></code>)<a class="headerlink" href="#transformar-elementos-usando-while" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">m</span><span class="p">:</span>
     <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
@@ -523,8 +583,25 @@ Matriz concatenada:
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriz A modificada: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
-
-<span class="n">B</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matriz A modificada: 
+ [[ 5  5 -1]
+ [ 5  5  5]
+ [ 5  5  5]
+ [ 5  5  5]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="repetir-transformacion-usando-for">
+<h3>4. Repetir transformación (usando <code class="docutils literal notranslate"><span class="pre">for</span></code>)<a class="headerlink" href="#repetir-transformacion-usando-for" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">B</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
@@ -532,45 +609,27 @@ Matriz concatenada:
         <span class="k">else</span><span class="p">:</span>
             <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriz B modificada con bucles for: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriz A modificada con bucles for: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¿Las matrices A y B son iguales?&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¿La matriz resultante es igual con ambos métodos (`while` y `for`)?&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matriz A inicializada: 
- [[0 0 0]
- [0 0 0]
- [0 0 0]
- [0 0 0]]
-Vector generado para la columna 1: [ 2  1  0 -1]
-Vector generado para la columna 2: [ 3  3 -1  1]
-Vector generado para la columna 3: [ 1 -1  0  3]
-Matriz A: 
- [[ 2  3  1]
- [ 1  3 -1]
- [ 0 -1  0]
- [-1  1  3]]
-Matriz A modificada: 
- [[ 5  5  5]
- [ 5  5 -1]
- [ 5 -1  5]
- [-1  5  5]]
-Matriz B modificada con bucles for: 
- [[ 5  5  5]
- [ 5  5 -1]
- [ 5 -1  5]
- [-1  5  5]]
-¿Las matrices A y B son iguales? True
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matriz A modificada con bucles for: 
+ [[ 5  5 -1]
+ [ 5  5  5]
+ [ 5  5  5]
+ [ 5  5  5]]
+¿La matriz resultante es igual con ambos métodos (`while` y `for`)? True
 </pre></div>
 </div>
 </div>
 </div>
 </section>
+</section>
 <section id="ejercicio-3">
-<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this heading">#</a></h2>
-<p><strong>Ejercicio 3</strong></p>
+<h2><strong>Ejercicio 3</strong><a class="headerlink" href="#ejercicio-3" title="Permalink to this heading">#</a></h2>
 <p>Se recolectaron datos de 8 estudiantes universitarios y se resumieron en la siguiente tabla:</p>
 <div align="center">
 <table class="table">
@@ -641,6 +700,8 @@ Matriz B modificada con bucles for:
 <li><p>Extraer las variables categóricas y guardarlas en un subconjunto llamado <strong>subc2</strong></p></li>
 <li><p>Extraer las variables numéricas y guardarlas en un subconjunto llamado <strong>subc3</strong></p></li>
 </ol>
+<section id="crear-un-data-frame-y-llamarlo-df">
+<h3>1. Crear un data frame y llamarlo <strong>df</strong>.<a class="headerlink" href="#crear-un-data-frame-y-llamarlo-df" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -753,6 +814,9 @@ Matriz B modificada con bucles for:
 </table>
 </div></div></div>
 </div>
+</section>
+<section id="realizar-un-analisis-descriptivo-basico-de-todas-las-variables">
+<h3>2. Realizar un análisis descriptivo básico de todas las variables.<a class="headerlink" href="#realizar-un-analisis-descriptivo-basico-de-todas-las-variables" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
@@ -878,6 +942,10 @@ Matriz B modificada con bucles for:
 </table>
 </div></div></div>
 </div>
+<p>Algunas de las estadísticas descriptivas generales obtenidas a partir del conjunto de datos muestran que la masa corporal presenta un promedio de 60,75 kg, con una desviación estándar de 12,21 kg y valores que oscilan entre 45 y 84 kg, lo que evidencia una variabilidad considerable en el peso de los individuos. Por su parte, la estatura registra un promedio de 170,75 cm, con una desviación estándar de 7,54 cm y valores comprendidos entre 164 y 183 cm. En cuanto al género, se observa un predominio de hombres, con 6 de las 8 observaciones, mientras que las 2 restantes corresponden a mujeres. Respecto al estrato socioeconómico, la categoría más frecuente es el estrato 3, presente en 5 observaciones, mientras que los estratos 1 y 2 presentan una menor frecuencia. Finalmente, en relación con la variable Fuma, 5 personas presentan el valor “NO” y 3 el valor “SI”, por lo que en la muestra predominan los individuos que no fuman.</p>
+</section>
+<section id="extraer-un-subconjunto-de-datos-con-los-primeros-4-estudiantes-y-llamarlo-subc1">
+<h3>3. Extraer un subconjunto de datos con los primeros 4 estudiantes y llamarlo <strong>subc1</strong><a class="headerlink" href="#extraer-un-subconjunto-de-datos-con-los-primeros-4-estudiantes-y-llamarlo-subc1" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">subc1</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">4</span><span class="p">,:]</span>
@@ -952,6 +1020,9 @@ Matriz B modificada con bucles for:
 </table>
 </div></div></div>
 </div>
+</section>
+<section id="extraer-las-variables-categoricas-y-guardarlas-en-un-subconjunto-llamado-subc2">
+<h3>4. Extraer las variables categóricas y guardarlas en un subconjunto llamado <strong>subc2</strong><a class="headerlink" href="#extraer-las-variables-categoricas-y-guardarlas-en-un-subconjunto-llamado-subc2" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">subc2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="s1">&#39;category&#39;</span><span class="p">])</span>
@@ -1031,6 +1102,9 @@ Matriz B modificada con bucles for:
 </table>
 </div></div></div>
 </div>
+</section>
+<section id="extraer-las-variables-numericas-y-guardarlas-en-un-subconjunto-llamado-subc3">
+<h3>5. Extraer las variables numéricas y guardarlas en un subconjunto llamado <strong>subc3</strong><a class="headerlink" href="#extraer-las-variables-numericas-y-guardarlas-en-un-subconjunto-llamado-subc3" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">subc3</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;number&#39;</span><span class="p">)</span>
@@ -1121,6 +1195,7 @@ Matriz B modificada con bucles for:
 </div>
 </section>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1159,7 +1234,7 @@ Matriz B modificada con bucles for:
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Trabajos - Visualización de Datos 202630</p>
+        <p class="prev-next-title"><strong>Trabajos - Visualización de Datos 202630</strong></p>
       </div>
     </a>
 </div></div>
@@ -1180,9 +1255,26 @@ Matriz B modificada con bucles for:
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1"><strong>Ejercicio 1</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calcular-el-factorial">1. Calcular el factorial</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriz-comparativa-de-vectores-aleatorios">2. Matriz comparativa de vectores aleatorios</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2"><strong>Ejercicio 2</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-matriz-de-ceros">1. Crear matriz de ceros</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#llenar-matriz-con-numeros-aleatorios-usando-while">2. Llenar matriz con números aleatorios (usando <code class="docutils literal notranslate"><span class="pre">while</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformar-elementos-usando-while">3. Transformar elementos (usando <code class="docutils literal notranslate"><span class="pre">while</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repetir-transformacion-usando-for">4. Repetir transformación (usando <code class="docutils literal notranslate"><span class="pre">for</span></code>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3"><strong>Ejercicio 3</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crear-un-data-frame-y-llamarlo-df">1. Crear un data frame y llamarlo <strong>df</strong>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#realizar-un-analisis-descriptivo-basico-de-todas-las-variables">2. Realizar un análisis descriptivo básico de todas las variables.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extraer-un-subconjunto-de-datos-con-los-primeros-4-estudiantes-y-llamarlo-subc1">3. Extraer un subconjunto de datos con los primeros 4 estudiantes y llamarlo <strong>subc1</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extraer-las-variables-categoricas-y-guardarlas-en-un-subconjunto-llamado-subc2">4. Extraer las variables categóricas y guardarlas en un subconjunto llamado <strong>subc2</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extraer-las-variables-numericas-y-guardarlas-en-un-subconjunto-llamado-subc3">5. Extraer las variables numéricas y guardarlas en un subconjunto llamado <strong>subc3</strong></a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
