@@ -1,0 +1,1248 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Trabajo 1 - Módulo 1: Introducción a la ciencia de datos con python - Ejercicios 1, 2 y 3 &#8212; Trabajos - Visualización de Datos 202630</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tarea';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Trabajos - Visualización de Datos 202630" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/UN.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/UN.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Trabajos - Visualización de Datos 202630
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Trabajo 1 -  Módulo 1: Introducción a la ciencia de datos con python - Ejercicios 1, 2 y 3</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftarea.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/tarea.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Trabajo 1 -  Módulo 1: Introducción a la ciencia de datos con python - Ejercicios 1, 2 y 3</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="trabajo-1-modulo-1-introduccion-a-la-ciencia-de-datos-con-python-ejercicios-1-2-y-3">
+<h1>Trabajo 1 -  Módulo 1: Introducción a la ciencia de datos con python - Ejercicios 1, 2 y 3<a class="headerlink" href="#trabajo-1-modulo-1-introduccion-a-la-ciencia-de-datos-con-python-ejercicios-1-2-y-3" title="Permalink to this heading">#</a></h1>
+<section id="ejercicio-1">
+<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permalink to this heading">#</a></h2>
+<p><strong>Ejercicio 1</strong></p>
+<p>Dado un valor <span class="math notranslate nohighlight">\(n\)</span>, realice las siguientes tareas:</p>
+<ol class="arabic simple">
+<li><p><strong>Calcular el factorial</strong>: Obtenga el resultado de multiplicar los números del 1 al <span class="math notranslate nohighlight">\(n\)</span> (factorial de <span class="math notranslate nohighlight">\(n\)</span>). Implemente una función que realice este cálculo.</p></li>
+<li><p><strong>Matriz comparativa de vectores aleatorios</strong>:</p>
+<ul class="simple">
+<li><p>Cree dos vectores <span class="math notranslate nohighlight">\(V_1\)</span> y <span class="math notranslate nohighlight">\(V_2\)</span> de tamaño <span class="math notranslate nohighlight">\(n\)</span> con números aleatorios entre 1 y 10</p></li>
+<li><p>Genere un vector <span class="math notranslate nohighlight">\(V_3\)</span> donde:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(V_3[i] = 0\)</span> si <span class="math notranslate nohighlight">\(V_1[i] &lt; V_2[i]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(V_3[i] = 1\)</span> en caso contrario</p></li>
+</ul>
+</li>
+<li><p>Concatene los tres vectores (<span class="math notranslate nohighlight">\(V_1\)</span>, <span class="math notranslate nohighlight">\(V_2\)</span>, <span class="math notranslate nohighlight">\(V_3\)</span>) como columnas para obtener una matriz de dimensiones <span class="math notranslate nohighlight">\((n \times 3)\)</span></p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Sugerencias:</strong></p>
+<ul class="simple">
+<li><p>Utilice <code class="docutils literal notranslate"><span class="pre">NumPy</span></code> para generar los vectores aleatorios</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">np.random.randint()</span></code> para los números aleatorios</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">np.concatenate()</span></code> para combinar los vectores en una matriz</p></li>
+<li><p>Pruebe con <span class="math notranslate nohighlight">\(n = 10\)</span> como ejemplo</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculo de factorial&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;El factorial no está definido para números negativos&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3628800
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">V1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)])</span>
+<span class="n">V2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vector 1:&quot;</span><span class="p">,</span> <span class="n">V1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vector 2:&quot;</span><span class="p">,</span> <span class="n">V2</span><span class="p">)</span>
+
+<span class="n">V3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">V1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">V2</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+        <span class="n">V3</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">V3</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vector 3:&quot;</span><span class="p">,</span> <span class="n">V3</span><span class="p">)</span>
+
+<span class="n">matriz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">V1</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">],</span> <span class="n">V2</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">],</span> <span class="n">V3</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriz concatenada: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">matriz</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Vector 1: [8 1 9 2 4 7 7 2 1 4]
+Vector 2: [7 8 4 2 3 7 5 3 9 5]
+Vector 3: [1 0 1 1 1 1 1 0 0 0]
+Matriz concatenada: 
+ [[8 7 1]
+ [1 8 0]
+ [9 4 1]
+ [2 2 1]
+ [4 3 1]
+ [7 7 1]
+ [7 5 1]
+ [2 3 0]
+ [1 9 0]
+ [4 5 0]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejercicio-2">
+<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permalink to this heading">#</a></h2>
+<p><strong>Ejercicio 2</strong></p>
+<p>Dado valores <span class="math notranslate nohighlight">\(m\)</span> (número de filas) y <span class="math notranslate nohighlight">\(n\)</span> (número de columnas), realice las siguientes tareas:</p>
+<ol class="arabic simple">
+<li><p><strong>Crear matriz de ceros</strong>: Genere una matriz <span class="math notranslate nohighlight">\(A\)</span> de dimensiones <span class="math notranslate nohighlight">\((m \times n)\)</span> inicializada con ceros.</p></li>
+<li><p><strong>Llenar matriz con números aleatorios (usando <code class="docutils literal notranslate"><span class="pre">while</span></code>)</strong>:</p>
+<ul class="simple">
+<li><p>Utilizando un bucle <code class="docutils literal notranslate"><span class="pre">while</span></code>, reemplace cada columna de la matriz <span class="math notranslate nohighlight">\(A\)</span> por vectores de números aleatorios enteros en el rango <span class="math notranslate nohighlight">\([-1, 3]\)</span></p></li>
+<li><p>Recorra columna por columna</p></li>
+</ul>
+</li>
+<li><p><strong>Transformar elementos (usando <code class="docutils literal notranslate"><span class="pre">while</span></code>)</strong>:</p>
+<ul class="simple">
+<li><p>Utilizando dos bucles <code class="docutils literal notranslate"><span class="pre">while</span></code> anidados, recorra todos los elementos de la matriz</p></li>
+<li><p>Reemplace los elementos <strong>negativos</strong> por <span class="math notranslate nohighlight">\(-1\)</span></p></li>
+<li><p>Reemplace los elementos <strong>no negativos</strong> (cero o positivos) por <span class="math notranslate nohighlight">\(5\)</span></p></li>
+</ul>
+</li>
+<li><p><strong>Repetir transformación (usando <code class="docutils literal notranslate"><span class="pre">for</span></code>)</strong>:</p>
+<ul class="simple">
+<li><p>Realice el mismo ejercicio del paso 3, pero esta vez utilizando dos bucles <code class="docutils literal notranslate"><span class="pre">for</span></code> anidados</p></li>
+<li><p>Compare los resultados para verificar que ambos métodos producen la misma matriz</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Sugerencias:</strong></p>
+<ul class="simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">np.zeros()</span></code> para crear la matriz inicial</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">np.random.randint()</span></code> para generar números aleatorios</p></li>
+<li><p>Recuerde que <code class="docutils literal notranslate"><span class="pre">while</span></code> requiere control manual del índice (incremento)</p></li>
+<li><p>Compare las dos matrices finales con <code class="docutils literal notranslate"><span class="pre">np.array_equal()</span></code></p></li>
+<li><p>Pruebe con <span class="math notranslate nohighlight">\(m = 4\)</span> y <span class="math notranslate nohighlight">\(n = 3\)</span> como ejemplo</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriz A inicializada: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+    <span class="n">vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">m</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Vector generado para la columna </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">vector</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">A</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">vector</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriz A: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">m</span><span class="p">:</span>
+    <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+        <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriz A modificada: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+
+<span class="n">B</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matriz B modificada con bucles for: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¿Las matrices A y B son iguales?&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matriz A inicializada: 
+ [[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+Vector generado para la columna 1: [ 3 -1  2  3]
+Vector generado para la columna 2: [2 1 2 2]
+Vector generado para la columna 3: [-1  2  3 -1]
+Matriz A: 
+ [[ 3  2 -1]
+ [-1  1  2]
+ [ 2  2  3]
+ [ 3  2 -1]]
+Matriz A modificada: 
+ [[ 5  5 -1]
+ [-1  5  5]
+ [ 5  5  5]
+ [ 5  5 -1]]
+Matriz B modificada con bucles for: 
+ [[ 5  5 -1]
+ [-1  5  5]
+ [ 5  5  5]
+ [ 5  5 -1]]
+¿Las matrices A y B son iguales? True
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejercicio-3">
+<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permalink to this heading">#</a></h2>
+<p><strong>Ejercicio 3</strong></p>
+<p>Se recolectaron datos de 8 estudiantes universitarios y se resumieron en la siguiente tabla:</p>
+<div align="center">
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>MASA</p></th>
+<th class="head"><p>ESTATURA</p></th>
+<th class="head"><p>GENERO</p></th>
+<th class="head"><p>ESTRATO</p></th>
+<th class="head"><p>FUMA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>71</p></td>
+<td><p>183</p></td>
+<td><p>HOMBRE</p></td>
+<td><p>2</p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-odd"><td><p>45</p></td>
+<td><p>168</p></td>
+<td><p>HOMBRE</p></td>
+<td><p>1</p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-even"><td><p>50</p></td>
+<td><p>164</p></td>
+<td><p>HOMBRE</p></td>
+<td><p>1</p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-odd"><td><p>60</p></td>
+<td><p>164</p></td>
+<td><p>MUJER</p></td>
+<td><p>3</p></td>
+<td><p>SI</p></td>
+</tr>
+<tr class="row-even"><td><p>61</p></td>
+<td><p>167</p></td>
+<td><p>HOMBRE</p></td>
+<td><p>3</p></td>
+<td><p>SI</p></td>
+</tr>
+<tr class="row-odd"><td><p>84</p></td>
+<td><p>182</p></td>
+<td><p>HOMBRE</p></td>
+<td><p>3</p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-even"><td><p>55</p></td>
+<td><p>168</p></td>
+<td><p>MUJER</p></td>
+<td><p>3</p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-odd"><td><p>60</p></td>
+<td><p>170</p></td>
+<td><p>HOMBRE</p></td>
+<td><p>3</p></td>
+<td><p>SI</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple">
+<li><p>Crear un data frame y llamarlo <strong>df</strong>.</p></li>
+<li><p>Realizar un análisis descriptivo básico de todas las variables.</p></li>
+<li><p>Extraer un subconjunto de datos con los primeros 4 estudiantes y llamarlo <strong>subc1</strong>.</p></li>
+<li><p>Extraer las variables categóricas y guardarlas en un subconjunto llamado <strong>subc2</strong></p></li>
+<li><p>Extraer las variables numéricas y guardarlas en un subconjunto llamado <strong>subc3</strong></p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">data</span><span class="o">=</span><span class="p">{</span>
+    <span class="s2">&quot;Masa&quot;</span><span class="p">:[</span><span class="mi">71</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">61</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">60</span><span class="p">],</span>
+    <span class="s2">&quot;Estatura&quot;</span><span class="p">:[</span><span class="mi">183</span><span class="p">,</span> <span class="mi">168</span><span class="p">,</span> <span class="mi">164</span><span class="p">,</span> <span class="mi">164</span><span class="p">,</span> <span class="mi">167</span><span class="p">,</span> <span class="mi">182</span><span class="p">,</span> <span class="mi">168</span><span class="p">,</span> <span class="mi">170</span><span class="p">],</span>
+    <span class="s2">&quot;Genero&quot;</span><span class="p">:[</span><span class="s2">&quot;HOMBRE&quot;</span><span class="p">,</span><span class="s2">&quot;HOMBRE&quot;</span><span class="p">,</span><span class="s2">&quot;HOMBRE&quot;</span><span class="p">,</span><span class="s2">&quot;MUJER&quot;</span><span class="p">,</span><span class="s2">&quot;HOMBRE&quot;</span><span class="p">,</span><span class="s2">&quot;HOMBRE&quot;</span><span class="p">,</span><span class="s2">&quot;MUJER&quot;</span><span class="p">,</span><span class="s2">&quot;HOMBRE&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;Estrato&quot;</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+    <span class="s2">&quot;Fuma&quot;</span><span class="p">:[</span><span class="s2">&quot;NO&quot;</span><span class="p">,</span><span class="s2">&quot;NO&quot;</span><span class="p">,</span><span class="s2">&quot;NO&quot;</span><span class="p">,</span><span class="s2">&quot;SI&quot;</span><span class="p">,</span><span class="s2">&quot;SI&quot;</span><span class="p">,</span><span class="s2">&quot;NO&quot;</span><span class="p">,</span><span class="s2">&quot;NO&quot;</span><span class="p">,</span><span class="s2">&quot;SI&quot;</span><span class="p">],</span>
+<span class="p">}</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Masa</th>
+      <th>Estatura</th>
+      <th>Genero</th>
+      <th>Estrato</th>
+      <th>Fuma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>71</td>
+      <td>183</td>
+      <td>HOMBRE</td>
+      <td>2</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>45</td>
+      <td>168</td>
+      <td>HOMBRE</td>
+      <td>1</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>50</td>
+      <td>164</td>
+      <td>HOMBRE</td>
+      <td>1</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>60</td>
+      <td>164</td>
+      <td>MUJER</td>
+      <td>3</td>
+      <td>SI</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>61</td>
+      <td>167</td>
+      <td>HOMBRE</td>
+      <td>3</td>
+      <td>SI</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>84</td>
+      <td>182</td>
+      <td>HOMBRE</td>
+      <td>3</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>55</td>
+      <td>168</td>
+      <td>MUJER</td>
+      <td>3</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>60</td>
+      <td>170</td>
+      <td>HOMBRE</td>
+      <td>3</td>
+      <td>SI</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Masa</th>
+      <th>Estatura</th>
+      <th>Genero</th>
+      <th>Estrato</th>
+      <th>Fuma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>8.000000</td>
+      <td>8.00000</td>
+      <td>8</td>
+      <td>8.000000</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>unique</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>HOMBRE</td>
+      <td>NaN</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>freq</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>60.750000</td>
+      <td>170.75000</td>
+      <td>NaN</td>
+      <td>2.375000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>12.209481</td>
+      <td>7.53563</td>
+      <td>NaN</td>
+      <td>0.916125</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>45.000000</td>
+      <td>164.00000</td>
+      <td>NaN</td>
+      <td>1.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>53.750000</td>
+      <td>166.25000</td>
+      <td>NaN</td>
+      <td>1.750000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>60.000000</td>
+      <td>168.00000</td>
+      <td>NaN</td>
+      <td>3.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>63.500000</td>
+      <td>173.00000</td>
+      <td>NaN</td>
+      <td>3.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>84.000000</td>
+      <td>183.00000</td>
+      <td>NaN</td>
+      <td>3.000000</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">subc1</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">4</span><span class="p">,:]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Subconjunto 1:&quot;</span><span class="p">)</span>
+<span class="n">subc1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Subconjunto 1:
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Masa</th>
+      <th>Estatura</th>
+      <th>Genero</th>
+      <th>Estrato</th>
+      <th>Fuma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>71</td>
+      <td>183</td>
+      <td>HOMBRE</td>
+      <td>2</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>45</td>
+      <td>168</td>
+      <td>HOMBRE</td>
+      <td>1</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>50</td>
+      <td>164</td>
+      <td>HOMBRE</td>
+      <td>1</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>60</td>
+      <td>164</td>
+      <td>MUJER</td>
+      <td>3</td>
+      <td>SI</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">subc2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="s1">&#39;category&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Subconjunto 2:&quot;</span><span class="p">)</span>
+<span class="n">subc2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Subconjunto 2:
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Genero</th>
+      <th>Fuma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>HOMBRE</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>HOMBRE</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>HOMBRE</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>MUJER</td>
+      <td>SI</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>HOMBRE</td>
+      <td>SI</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>HOMBRE</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>MUJER</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>HOMBRE</td>
+      <td>SI</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">subc3</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;number&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Subconjunto 3:&quot;</span><span class="p">)</span>
+<span class="n">subc3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Subconjunto 3:
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Masa</th>
+      <th>Estatura</th>
+      <th>Estrato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>71</td>
+      <td>183</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>45</td>
+      <td>168</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>50</td>
+      <td>164</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>60</td>
+      <td>164</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>61</td>
+      <td>167</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>84</td>
+      <td>182</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>55</td>
+      <td>168</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>60</td>
+      <td>170</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Trabajos - Visualización de Datos 202630</p>
+      </div>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Joshua Hincapie Llorente y Alejandro Cantillo Escorcia — Universidad del Norte
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
